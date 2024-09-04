@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Let's Food</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+            color: #1d1d1d;
+            letter-spacing: 0.5px;
+            overflow-x: hidden;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #ffcb45; 
+            border: none; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            font-size: 15px;
+        }
+
+        .p {
+            font-size: 16px; 
+            word-spacing: 0.7px; 
+            letter-spacing: 0.5px; 
+            line-height: 20px; 
+            color: #666666; 
+            font-weight: normal;
+        }
+
+        .h2 {
+            margin-top: -20px; 
+            font-size: 30px; 
+            letter-spacing: 0.7px; 
+            word-spacing: 1px;
+        }
+
+        .h4 {
+            color: #ffcb45; 
+            font-size: 20px; 
+            letter-spacing: 0.7px; 
+            word-spacing: 1px;
+        }
+
+        .section2-cart-img {
+            background-color: #F1F1F1; 
+            padding: 30px; 
+            border-radius: 10px 10px 0 0; 
+        }
+
+        .section2-p {
+            font-size: 16px; 
+            color: #616161; 
+        }
+
+        .section2-cart-icon {
+            display: flex; 
+            justify-content: space-between; 
+            padding: 0 20px;
+        }
+
+        .footer-bg-img{
+            background-image: url('./img/bg-image.png');
+            height: 600px;
+            padding: 70px 240px; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .footer-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 60px;
+            gap: 20px;
+        }
+        .footer-h3{
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 3;
+            color: #1D1D1D;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+        .footer-p-1{
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 2.5;
+            color: #616161;
+            margin-left: 100px;
+        }
+        .footer-p{
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            color: #616161;
+            margin-bottom: 60px;
+        }
+        .i-btn{
+            padding: 18px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            color: #1D1D1D;
+            margin-left: 10px;
+            font-size: 20px;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        hr{
+            margin-top: 130px;
+        }
+        .footer-©{
+            margin-top: 60px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            color: #616161;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="main"
+            style="width: 100%; margin: 0 auto; max-width: 1920px;">
+            <header>
+
+                <!-- top main menu -->
+                <div class="top-main"
+                    style="padding: 0 180px;  height: 108px; width: 1920px; background-color: #fff9ea;">
+                    <div class="top"
+                        style="height: 108px; display: flex; justify-content: space-between; align-items: center;">
+                        <div class="main-logo">
+                            <img src="./img/logo.png" alt />
+                        </div>
+                        <div class="main-menu">
+                            <ul
+                                style="display: flex; align-items: center; gap: 37px; font-weight: 600; font-size: 17px;">
+                                <li><a href="#"
+                                        style="color: #1d1d1d; text-decoration: underline #ffcb45 3px;">Home</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">how it works</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-signin"
+                            style="display: flex; align-items: center; gap: 25px;">
+                            <i class="fa-solid fa-magnifying-glass"
+                                style="font-size: 22px;"></i>
+                            <i class="fa-solid fa-cart-shopping"
+                                style="font-size: 27px;""></i>
+                            <button class="btn">
+                                <i class="fa-solid fa-right-to-bracket"
+                                    style="padding: 2px 7px 2px 1px;"></i>Sign
+                                in
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- top main cover -->
+                <div class="top-main-caver"
+                    style="height: 800px; background-image: url(./img/shapes.png); background-repeat: no-repeat; background-size: cover; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div class="main-cover"
+                        style="padding: 0 180px; display: flex; justify-content: space-between; align-items: center;">
+                        <div class="main-text"
+                            style="display: flex; flex-direction: column; gap: 30px;">
+                            <h1
+                                style="font-size: 3rem; word-spacing: 3px; letter-spacing: 1px;">Be
+                                The Fastest In <br> Delivery Your <span
+                                    style="color: #ffcb45;">Food</span></h1>
+                            <p
+                                style="font-size: 16px; word-spacing: 0.7px; letter-spacing: 0.5px; line-height: 20px; color: #666666; font-weight: normal;">Lorem
+                                ipsum dolor sit abet, consecrator <br>
+                                adipiscing elit ut aliquam, purus sit amen</p>
+                            <button class="btn"
+                                style="width: fit-content; display: inline-block;">Get
+                                Started</button>
+                        </div>
+                        <div class="main-img"
+                            style="position: relative; right: -480px;">
+                            <img src="./img/img-hero.png" alt="img-hero">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- section 1 -->
+            <section>
+                <div class="section1"
+                    style="display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 80px 170px; text-align: center;">
+                    <h4 class="h4">How it works</h4>
+                    <h2 class="h2">What We Serve</h2>
+                    <p class="p">Product Quality Is Our Priority, And Always
+                        Guarantees <br> Halal And Safety Until It Is In Your
+                        Hands.</p>
+                    <div class="section1-img"
+                        style="display: flex; justify-content: space-between; align-items: center; gap: 250px;">
+                        <div class="section1-img-div1"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                            <img src="./img/order 1.png" alt>
+                            <h2 class="h2">Easy To Order</h2>
+                            <p class="p">You only order through <br> the app</p>
+                        </div>
+                        <div class="section1-img-div2"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                            <img src="./img/delivery 1.png" alt>
+                            <h2 class="h2">Fastest Delivery</h2>
+                            <p class="p">Delivery will be on <br> time</p>
+                        </div>
+
+                        <div class="section1-img-div3"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                            <img src="./img/courier 1.png" alt>
+                            <h2 class="h2">Best Quality</h2>
+                            <p class="p">The best quality of food <br> for
+                                you</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section 2 -->
+            <section class="section2">
+                <div class="section2-text"
+                    style="display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center; margin-bottom: 30px;">
+                    <h4 class="h4">Our menu</h4>
+                    <h2 class="h2">Our Popular Menu</h2>
+                    <p class="p">Lorem ipsum dolor sit amen, consenter <br>
+                        adipiscing elit ut aliquam</p>
+                </div>
+
+                <div class="section2-cart"
+                    style="display: flex; justify-content: center; gap: 90px;">
+
+                    <div class="section2-cart1"
+                        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.137) 0px 2px 4px -1px;">
+                        <div class="section2-cart-img">
+                            <img src="./img/card-product1.png" alt>
+                        </div>
+                        <div class="section2-cart-text"
+                            style="text-align: center;">
+                            <div class="section2-others"
+                                style="padding: 15px 0; ">
+                                <h4>Mie Ramen</h4>
+                                <p class="section2-p">lorem ipsum</p>
+                                <div class="section2-cart-icon">
+                                    <h4>$ 20.2</h4>
+                                    <i class="fa-solid fa-heart"
+                                        style="color: #ffcb45;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section2-cart2"
+                        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+                        <div class="section2-cart-img">
+                            <img src="./img/card-product2.png" alt>
+                        </div>
+                        <div class="section2-cart-text"
+                            style="text-align: center;">
+                            <div class="section2-others"
+                                style="padding: 10px 0;">
+                                <h4>Salad Oahu</h4>
+                                <p class="section2-p">lorem ipsum</p>
+                                <div class="section2-cart-icon">
+                                    <h4>$ 20.2</h4>
+                                    <i class="fa-solid fa-heart "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section2-cart3"
+                        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+                        <div class="section2-cart-img">
+                            <img src="./img/card-product3.png" alt>
+                        </div>
+                        <div class="section2-cart-text"
+                            style="text-align: center;">
+                            <div class="section2-others"
+                                style="padding: 10px 0;">
+                                <h4>Rota Dakar</h4>
+                                <p class="section2-p">lorem ipsum</p>
+                                <div class="section2-cart-icon">
+                                    <h4>$ 20.2</h4>
+                                    <i class="fa-solid fa-heart "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section2-cart4"
+                        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+                        <div class="section2-cart-img">
+                            <img src="./img/card-product4.png" alt>
+                        </div>
+                        <div class="section2-cart-text"
+                            style="text-align: center;">
+                            <div class="section2-others"
+                                style="padding: 10px 0;">
+                                <h4>Spaghetti</h4>
+                                <p class="section2-p">lorem ipsum</p>
+                                <div class="section2-cart-icon">
+                                    <h4>$ 20.2</h4>
+                                    <i class="fa-solid fa-heart "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart div ses -->
+                <div class="section2-btn" style="display: flex; justify-content: center; align-items: center; margin-top: 70px; margin-bottom: 45px;">
+                    <button class="btn">More Menu</button>
+                </div>
+            </section>
+
+            <!-- section3 start -->
+            <section class="section3" style="display: flex; justify-content: center; align-items: center; margin-left: 700px; margin-bottom: 80px;">
+                <div class="section3-img">
+                    <img style="position: relative; top: 30px;" src="./img/s-1.png" alt="">
+                    <div class="review-img-dawn" style="display: flex;">
+                        <img src="./img/s-2.png" alt="">
+                        <img style="position: relative; left: -30px;" src="./img/s-3.png" alt="">        
+                    </div>
+                </div>
+                <div class="section3-text" style="margin-left: 30px;">
+                    <h4 class="section3-h4" style=" color: #ffcb45; font-size: 20px; letter-spacing: 0.7px; word-spacing: 1px;">What the say</h4>
+                    <h2 class="section3-h2" style="margin-top: 10px; font-size: 30px; letter-spacing: 0.7px; word-spacing: 1px;">What Our Customers Say <br> About Us</h2>
+                    <div class="review-main" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 30px; margin-top: 30px;">
+                        <div class="review-area-container" style="background-color: #f1f1f1; padding: 40px 30px; border-radius: 15px; width: 500px;">
+                            <div class="review-area" style="display: flex;">
+                                <img src="./img/re.png" alt="">
+                                <div class="review-others" style="margin-left: 20px; margin-top: 10px;">
+                                    <p>Naura Silvana</p>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                </div>   
+                            </div>
+                            <p style="margin-top: 20px;">“Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ut aliquam, purus sit amet luctus <br> venenatis.”</p>
+                        </div>
+
+                        <div class="review-area-container" style="background-color: #f1f1f1; padding: 40px 30px; border-radius: 15px; width: 500px;">
+                            <div class="review-area" style="display: flex;">
+                                <img src="./img/re.png" alt="">
+                                <div class="review-others" style="margin-left: 20px; margin-top: 10px;">
+                                    <p>Naura Silvana</p>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                </div>   
+                            </div>
+                            <p style="margin-top: 20px;">“Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ut aliquam, purus sit amet luctus <br> venenatis.”</p>
+                        </div>
+
+                        <div class="review-area-container" style="background-color: #f1f1f1; padding: 40px 30px; border-radius: 15px; width: 500px;">
+                            <div class="review-area" style="display: flex;">
+                                <img src="./img/re.png" alt="">
+                                <div class="review-others" style="margin-left: 20px; margin-top: 10px;">
+                                    <p>Naura Silvana</p>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffcb45;"></i>
+                                </div>   
+                            </div>
+                            <p style="margin-top: 20px;">“Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ut aliquam, purus sit amet luctus <br> venenatis.”</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section 4 -->
+            <section class="section4">
+                <div class="section4-cover-img" style="border-radius: 10px; text-align: center; gap: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;background-image: url(./img/cta-img.png); background-size: cover; background-repeat: no-repeat; height: 400px; margin: 0 200px; margin-bottom: 80px;">
+                    <h2 class="h2" style="color: #ffffff;">Join our member and get <br> discount up to 50%</h2>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </section>
+
+            <!-- footer start -->
+            <footer id="footer">
+                <div class="footer-bg-img">
+                    <div class="footer-grid">
+                        <div class="footer-grid-1">
+                            <a href="#"><img style="padding-bottom:30px;" src="./img/logo.png" alt="logo"></a>
+                            <p class="footer-p">Jalan Semangka Raya, Telaga Murni,Cikarang Barat, Kab. Bekasi</p>
+        
+                            <div class="footer-icon">
+                                <a href="#" class="i-btn"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/abdurrahman482937" style="background-color: #FFCB45; padding: 16px 18px;" class="i-btn"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="i-btn"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="footer-grid-2">
+                            <h3 class="footer-h3">Company</h3>
+                            <p class="footer-p-1">About Us</p>
+                            <p class="footer-p-1">Career</p>
+                            <p class="footer-p-1">How It Work</p>
+                        </div>
+                        <div class="footer-grid-3">
+                            <h3 class="footer-h3">Policy</h3>
+                            <p class="footer-p-1">FAQ</p>
+                            <p class="footer-p-1">Privacy</p>
+                            <p class="footer-p-1">Shipping</p>
+                        </div>
+                        <div class="footer-grid-4">
+                            <h3 class="footer-h3">Get In Touch</h3>
+                            <p class="footer-p-1">+62 896 7311 2766</p>
+                            <p class="footer-p-1">food@example.com</p>
+                        </div>
+                    </div>
+                    
+                <hr>
+                <p class="footer-©">Copyright © 2024. All rights reserved</p>
+        
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
+
+
+
+
+<!-- echo "# Cube-Quest" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abdurrahman2028/
+git push -u origin main
+
+
+git remote add origin https://github.com/abdurrahman2028/
+git branch -M main
+git push -u origin main -->
